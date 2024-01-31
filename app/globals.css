@@ -5,18 +5,38 @@
 :root {
  --background-color: #E7E8EA;
  --foreground-color: #262B2E;
+ --ecommerce-light-color: #F2F1F1;
+ --input-border: rgba(38, 43, 46, 0.30);
 
- --fs-hero-header: clamp(1.88rem, 4vw, 3rem);
+  /* font-sizes */
+ --fs-hero-header: clamp(1.88rem, 4vw, 4.5rem);
+ --fs-header-two: clamp(1.5rem, 4vw, 1.87rem);
+ --fs-header-three: clamp(1.25rem, 4vw, 1.5rem);
+ --fs-base: clamp(0.8125rem, 4vw, 1rem);
+ --fs-body: clamp(0.75rem, 4vw, 0.8125rem);
 }
 
 
 body {
   background-color: var(--background-color);
+  font-size: var(--fs-body);
   color: var(--foreground-color)
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .container {
+    width: min(100%, 80em);
+  }
+
+  .text-stroke {
+    font-size: clamp(6rem, 4vw, 8rem);
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px var(--foreground-color);
+    opacity: 0.7;
+    text-wrap: nowrap;
   }
 }

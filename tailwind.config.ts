@@ -8,12 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'md': '768px',
+        "lg": "1024px"
+      },
       colors: {
         background: "var(--background-color)",
-        foreground: "var(--foreground-color)"
+        foreground: "var(--foreground-color)",
+        "ecommerce-light": "var(--ecommerce-light-color)",
+        input: {
+          border: "var(--input-border)"
+        }
       },
       fontSize: {
-        header: "var(--fs-hero-header)"
+        header: "var(--fs-hero-header)",
+        "header-two": "var(--fs-header-two)",
+        "header-three": "var(--fs-header-three)",
+        base: "var(--fs-base)",
+        body: "var(--fs-body)",
       }
     },
   },

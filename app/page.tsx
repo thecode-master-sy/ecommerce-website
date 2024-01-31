@@ -1,9 +1,17 @@
-import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
+import FeaturedProductsSection from "@/components/FeaturedProductsSection";
+import ProductOfDaySection from "@/components/ProductOfDaySection";
+import LatestProductsSection from "@/components/LatestProductsSection";
+import DiscountSection from "@/components/DiscountSection";
 
 export default function Home() {
   return (
-    <main className="flex gap-2 min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-header">this is an example website</h1> 
+    <main className="grid grid-cols-12 gap-y-48">
+        <HeroSection/>         
+        <FeaturedProductsSection/>
+        <ProductOfDaySection/>
+        <LatestProductsSection/>
+        <DiscountSection/>
     </main>
   );
 }
