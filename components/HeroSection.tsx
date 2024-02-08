@@ -1,21 +1,31 @@
-import Button from "./Button";
+"use client"
 import HeroSlider from "./HeroSlider";
+import {useScroll, useTransform} from "framer-motion"
+import {useRef} from "react"
 
 export default function HeroSection() {
+  const targetRef = useRef<HTMLDivElement | null>(null)
+  const { scrollYProgress } = useScroll({
+    target: targetRef
+  })
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
   return (
-    <div className="grid grid-rows-[max-content,_1fr]  col-span-12 relative mt-7 px-2 md:px-0 min-h-[85vh] overflow-hidden">
-        <div className="relative z-10 mix-blend-difference md:pl-2 w-full  border border-black">
+    <div ref={targetRef} className="relative md:h-[300vh] col-span-12">
+     <div className="grid grid-rows-[max-content,_1fr]  col-span-12 sticky top-0 px-2 md:px-0 min-h-[100vh] overflow-hidden pt-16 pb-4">
+        <div className="relative z-10 mix-blend-difference md:pl-2 w-full">
           <h1 className="uppercase text-header font-bold ">Get the latest laptops and tech accessories</h1>
         </div>
+        
+        <div className="hidden md:block">
+          <HeroSlider x={x}/> 
+        </div>
 
-        <HeroSlider/> 
-
-        <div className="hidden md:block mt-auto col-span-12">
-          <form className="flex gap-2 w-full justify-center">
-            <input type="search" className="w-[35%] border px-2 py-1 rounded-md border-input-border bg-ecommerce-light  text-input-border" name="search" placeholder="what are you looking for"/>
-            <Button showArrow={false}>search product</Button>
-          </form>
-        </div> 
+        <div className="md:hidden">
+          <HeroSlider/>
+        </div>
+        
+       
+     </div>
     </div>
   )
 }

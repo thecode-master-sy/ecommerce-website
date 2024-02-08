@@ -27,6 +27,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
   .container {
     width: min(100%, 80em);
   }

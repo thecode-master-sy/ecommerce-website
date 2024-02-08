@@ -15,7 +15,7 @@ export default function ProductOfDaySection() {
          <div className="col-start-1 md:col-start-1 md:col-span-12 row-start-2 md:self-center overflow-hidden">
            <h1 className="text-stroke font-bold">Products of the day Products of the day</h1>
          </div>
-         <Image className="row-start-2 md:row-end-3 col-start-1 md:col-start-6 md:col-span-6 md:self-center z-10 max-w-xs md:max-w-[480px] place-self-end" src={productOneOfDay} alt="product of the day"/>
+         <Image className="w-full row-start-2 md:row-end-3 col-start-1 md:col-start-6 md:col-span-6 md:self-center z-10 max-w-xs md:max-w-[480px] place-self-end" src={productOneOfDay} alt="product of the day"/>
 
          <div className="row-start-3 row-end-3 md:col-span-12 flex justify-between items-end">
            <span className="flex gap-2">

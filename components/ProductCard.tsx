@@ -6,7 +6,7 @@ export default function FeaturedProducts({imageSrc, productName, productPrice}: 
    return (
     <div className="grid bg-ecommerce-light min-w-72 md:min-w-96 p-5">
       <div className="relative w-full flex items-center justify-center p-12">
-          <Image width={100} height={100} src={imageSrc} alt="headset image"/>
+          <Image draggable="false" className="select-none" width={100} height={100} src={imageSrc} alt="headset image"/>
       </div>        
 
       <div className="align-self-end flex flex-col justify-end">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NavBar(){
   return (
-    <header className="col-span-12 pt-2 pl-2 pr-2">
+    <header className="fixed top-0 left-0 right-0 col-span-12 pt-2 pl-2 pr-2 z-20">
       <nav className="col-span-12 grid grid-cols-12 items-center">
         <h1 className="text-header-three">LOGO</h1>
 

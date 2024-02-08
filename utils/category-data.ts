@@ -1,6 +1,6 @@
 import MousePng from "@/public/minmouse.png";
 import MacBookAir from "@/public/macbookair.png";
-import Iphone from "@/public/iphone.png";
+import Iphone from "@/public/iphone14.png";
 import Keychron from "@/public/keychron.png";
 
 const categoryDatas = [

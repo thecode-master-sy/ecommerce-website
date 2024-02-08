@@ -1,12 +1,13 @@
-import FeaturedProductsSlider from "./FeaturedProductsSlider";
+import ProductsSlider from "./ProductsSlider";
 import Button from "@/components/Button";
+import { featuredProductsArray } from "@/utils/featuredProducts-data";
 
 export default function FeaturedProducts() {
   return (
       <div className="col-span-12 px-2 overflow-hidden">
         <h1 className="text-header-two uppercase font-bold">Featured Products</h1>
 
-        <FeaturedProductsSlider/>  
+        <ProductsSlider products={featuredProductsArray}/>  
 
         <div className="flex justify-center mt-7">
           <Button showArrow>checkout featured products</Button>
