@@ -4,8 +4,8 @@ import { featuredProductsArray } from "@/utils/featuredProducts-data";
 
 export default function FeaturedProducts() {
   return (
-      <div className="col-span-12 px-2 overflow-hidden">
-        <h1 className="text-header-two uppercase font-bold">Featured Products</h1>
+      <div className="col-span-12 overflow-hidden">
+        <h1 className="text-header-two uppercase font-bold px-2">Featured Products</h1>
 
         <ProductsSlider products={featuredProductsArray}/>  
 
