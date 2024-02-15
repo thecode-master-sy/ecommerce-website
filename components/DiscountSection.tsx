@@ -1,6 +1,6 @@
 import Image from "next/image";
 import jblImage from "@/public/jbl.png";
-import Button from "@/components/Button"
+import {Button} from "@/components/Button"
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function DiscountSection() {

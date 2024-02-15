@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import Button from "./Button";
+import {Button} from "./Button";
 
 export default function SliderElement({href, category}: {href:StaticImageData, category:string}) {
   return (

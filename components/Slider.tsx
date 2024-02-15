@@ -34,7 +34,6 @@ const Slider:React.FC<React.HTMLAttributes<HTMLDivElement> & MotionProps> = ({cl
     const targetElement = sliderElement.current?.getBoundingClientRect();
     const offsetX = clientX - (targetElement?.left ?? 0);
     const offsetY = clientY - (targetElement?.top ?? 0);
-    console.log(offsetX, offsetY)
     setInitialCursorPosition({x: offsetX, y: offsetY});
   };
 

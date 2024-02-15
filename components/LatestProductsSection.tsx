@@ -1,6 +1,6 @@
 import { featuredProductsArray } from "@/utils/featuredProducts-data";
 import ProductsSlider from "./ProductsSlider";
-import Button from "@/components/Button";
+import {Button} from "@/components/Button";
 
 export default function FeaturedProducts() {
   return (

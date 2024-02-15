@@ -1,7 +1,7 @@
 import productOneOfDay from "@/public/productOneOfDay.png";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Button from "./Button";
+import {Button} from "./Button";
 
 export default function ProductOfDaySection() {
   return (

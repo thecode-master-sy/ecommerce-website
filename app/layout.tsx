@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import NavBarContextProvider from "@/contexts/NavbarContext";
 
 const roboto = Roboto({weight: ["100", "300", "400", "500", "700", "900"], subsets: ["latin"]});
 
@@ -20,11 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <SmoothScroll>
-          <NavBar/>
-           {children}
-          <Footer/>
-        </SmoothScroll>
+        <NavBarContextProvider>
+          <SmoothScroll>
+            <NavBar/>
+            {children}
+            <Footer/>
+          </SmoothScroll>
+        </NavBarContextProvider>
       </body>
     </html>
   );
