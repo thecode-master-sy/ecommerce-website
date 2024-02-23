@@ -15,9 +15,9 @@ export default function HeroSection() {
   const NavBarContext = useNavBarContext();
   
   useEffect(() => {
-    headerRef.current?.getBoundingClientRect().top == 64 ? NavBarContext?.setOverlaping(false) : NavBarContext?.setOverlaping(true)
+    Math.round(headerRef.current?.getBoundingClientRect().top ?? 0) == 64 ? NavBarContext?.setOverlaping(false) : NavBarContext?.setOverlaping(true)
     function handleScroll() {
-      headerRef.current?.getBoundingClientRect().top == 64 ? NavBarContext?.setOverlaping(false) : NavBarContext?.setOverlaping(true);
+      Math.round(headerRef.current?.getBoundingClientRect().top ?? 0) == 64 ? NavBarContext?.setOverlaping(false) : NavBarContext?.setOverlaping(true);
     }
     addEventListener("scroll", handleScroll);
     return () => removeEventListener("scroll", handleScroll)

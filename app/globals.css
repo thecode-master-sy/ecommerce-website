@@ -9,8 +9,8 @@
  --input-border: rgba(38, 43, 46, 0.30);
 
   /* font-sizes */
- --fs-hero-header: clamp(1.88rem, 4vw, 4.5rem);
- --fs-header-two: clamp(1.5rem, 4vw, 1.87rem);
+ --fs-hero-header: clamp(1.88rem, 4vw, 4vw);
+ --fs-header-two: clamp(1.5rem, 2vw, 2vw);
  --fs-header-three: clamp(1.25rem, 4vw, 1.5rem);
  --fs-base: clamp(0.8125rem, 4vw, 1rem);
  --fs-body: clamp(0.75rem, 4vw, 0.8125rem);
@@ -33,11 +33,11 @@ body {
   }
 
   .text-stroke {
-    font-size: clamp(6rem, 4vw, 8rem);
-    color: transparent;
+    font-size: 12vw;
+    color: var(--foreground-color);
     text-transform: uppercase;
-    -webkit-text-stroke: 0.5px var(--foreground-color);
-    opacity: 0.7;
+    opacity: 0.2;
     text-wrap: nowrap;
+    
   }
 }
