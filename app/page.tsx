@@ -7,11 +7,11 @@ import DiscountSection from "@/components/DiscountSection";
 export default function Home() {
   return (
     <main className="grid grid-cols-12 gap-y-48">
-        <HeroSection/>         
-        <FeaturedProductsSection/>
-        <ProductOfDaySection/>
-        <LatestProductsSection/>
-        <DiscountSection/>
+      <HeroSection />
+      <FeaturedProductsSection />
+      <ProductOfDaySection />
+      <LatestProductsSection />
+      <DiscountSection />
     </main>
   );
 }

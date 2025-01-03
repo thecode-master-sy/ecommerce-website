@@ -1,5 +1,4 @@
 export default function Page() {
-    return (
-        <div>this is the shop page</div>
-    )
+  return <div>this is the shop page</div>;
 }
+
